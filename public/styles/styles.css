@@ -62,7 +62,12 @@ html{
     box-shadow: 0px 4px 5px rgb(201, 201, 201);
 }
 .menu_header{
-  scroll-behavior: smooth;
+  transition: font 0.3s;
+  transition: 0.5s;
+}
+.menu_header:hover{
+  font-size: 25px;
+  color:#78dde9;
 }
 .header.fixed {
     position: fixed;
@@ -226,6 +231,7 @@ footer {
   width:100%;
   text-align: center;
   color: #000000;
+  padding-top: 50px;
 }
 .internal_images{
   width: 100%;
@@ -280,11 +286,14 @@ text-align: center;
   text-align: center;
   align-items: center;
   width: 100%;
+  padding-top: 7%;
+
 }
 .program_item_container{
   display: flex;
   width: 100%;
   justify-content: center;
+  font-weight: 300;
 }
 .program_time_and_daily{
   font-family: "Noto Serif", serif;
@@ -318,7 +327,7 @@ text-align: center;
   font-variation-settings:"wdth" 100;
   font-size: 36px;
   color:#1D4E68;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 .item_2{
   font-family: "Noto Serif", serif;
@@ -361,6 +370,9 @@ text-align: center;
   text-align: center;
   align-items: center;
   width: 100%;
+  gap: 20px;
+  padding-top: 100px;
+  margin-bottom: 20px;
 }
 .wedding{
   display: flex;
@@ -369,12 +381,15 @@ text-align: center;
   text-align: center;
   align-items: center;
   width: 100%;
+  gap: 20px;
+  padding-top: 100px;
+  margin-bottom: 20px;
 }
 .wedding_item_1, .ceremony_item_1{
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 36px;
   color: #1D4E68;
 }
