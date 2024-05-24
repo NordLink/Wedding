@@ -719,3 +719,6 @@ justify-content: center; */
     font-size: 10px;
   }
 }
+.new__styles {
+  padding: 0;
+}
