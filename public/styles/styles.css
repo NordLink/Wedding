@@ -538,7 +538,15 @@ justify-content: center; */
     height: 50px;
     border-radius: 0px;
   }
-
+  .program {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 16%;
+  }
   .header::before{
     z-index: 3;
     position: absolute;
@@ -674,6 +682,84 @@ justify-content: center; */
     font-size: inherit;
     text-transform: uppercase;
     text-decoration: none
+  }
+  .item_1 {
+    font-size: 4.5vw;
+  }
+  .item_2 {
+    font-size: 4vw;
+  }
+  .item_3 {
+    align-items: center;
+    flex-direction: column;
+  }
+  .item_3 .t_1 {
+    text-align: center;
+    order: 1
+  }
+  .line{
+    display: none;
+  }
+  .item_3 .t_2 {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+    gap: 20px;
+    /* margin-left: -60%; */
+  }
+  
+  .item_3 .t_3 {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+    text-align: center;
+  }
+  .program_time_and_daily {
+    font-size: 4.8vw;
+  }
+  .program_place_name {
+    font-size: 4.5vw;
+  }
+  .program_place_address {
+    font-size: 4vw;
+  }
+  .ceremony {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    gap: 0px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+  }
+  .wedding_item_1,
+  .ceremony_item_1 {
+    font-size: 7vw;
+  }
+  .ceremony_item_3,
+  .wedding_item_3 {
+    font-size: 5vw;
+  }
+  .ceremony_item_4,
+  .wedding_item_4 {
+  font-size: 3.2vw;
+  }
+  .wedding {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    gap: 0px;
+    padding-top: 50px;
+    margin-bottom: 20px;
   }
 }
 
