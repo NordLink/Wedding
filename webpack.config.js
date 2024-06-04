@@ -52,6 +52,7 @@ module.exports = (env) => {
         patterns: [
           { from: 'public/images', to: 'images' }, 
           { from: 'public/styles', to: 'styles' },
+          { from: 'public/fonts', to: 'fonts' },
         ],
       }),
     ],
