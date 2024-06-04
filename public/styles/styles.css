@@ -76,7 +76,6 @@ html {
   top: 0;
   transform: translateY(0);
   z-index: 20;
-  transition: transform .3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,6 +103,7 @@ html {
   transform: translateY(100%);
   z-index: 40;
   border-radius: 0px 0px 25px 25px;
+  transition: transform .3s ease-in-out;
 }
 
 .wrapper {
