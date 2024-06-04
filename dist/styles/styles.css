@@ -747,6 +747,7 @@ justify-content: center; */
   }
   .program_time_and_daily {
     font-size: 4.8vw;
+    width: 70%;
   }
   .program_place_name {
     font-size: 4.5vw;
