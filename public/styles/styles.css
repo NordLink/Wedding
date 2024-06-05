@@ -54,6 +54,15 @@ img {
   height: auto;
 }
 
+/* Подключием шрифты */
+@font-face {
+  font-family: "Andantino script"; 
+  src: url("/fonts/andantinoscript.ttf") format("truetype"),
+  url("/fonts/andantino-script.woff") format("woff"),
+  url("/fonts/andantino-script.woff2") format("woff2"); 
+} 
+/* Подключием шрифты */
+
 body {
   display: flex;
   flex-direction: column;
