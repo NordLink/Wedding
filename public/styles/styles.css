@@ -59,7 +59,11 @@ img {
   font-family: "Andantino script"; 
   src: url("/fonts/andantinoscript.ttf") format("truetype"),
   url("/fonts/andantino-script.woff") format("woff"),
-  url("/fonts/andantino-script.woff2") format("woff2"); 
+  url("/fonts/andantino-script.woff2") format("woff2"), 
+} 
+@font-face {
+  font-family: "Noto Serif TC";
+  src: url("/fonts/NotoSerifTC-Light.otf") format("otf"); 
 } 
 /* Подключием шрифты */
 
@@ -365,22 +369,25 @@ justify-content: center; */
   font-family: "Noto Serif TC", serif;
   font-size: 2vw;
   font-weight: 300;
-  line-height: 4vw;
+  line-height: 3vw;
   text-align: center;
   align-self: flex-start;
+  letter-spacing: 0.3vw;
   width: 100%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 .text_invitation>span {
   background-color: transparent;
   font-family: "Noto Serif TC", serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 300;
   line-height: 4vw;
+  letter-spacing: 0.1vw;
 }
 
-.text_welcome,
-.text_invitation_waiting {
+.text_welcome, .text_invitation_waiting {
   font-family: "Andantino script", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -388,6 +395,7 @@ justify-content: center; */
   font-size: 4vw;
   color: black;
   text-align: center;
+  line-height: 3vw;
 }
 
 .text_invitation_waiting {
@@ -411,7 +419,7 @@ justify-content: center; */
   text-align: center;
   align-items: center;
   width: 100%;
-  padding-top: 7%;
+  padding-top: 10%;
 
 }
 
@@ -555,6 +563,18 @@ justify-content: center; */
 }
 .yandexMap>iframe{
   height : 465px;
+}
+.rings_image1{
+  display: flex;
+}
+.rings_image2{
+  display: none;
+}
+.glass_image1{
+  display: flex;
+}
+.glass_image2{
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -719,10 +739,10 @@ justify-content: center; */
     text-decoration: none
   }
   .item_1 {
-    font-size: 4.5vw;
+    font-size: 6vw;
   }
   .item_2 {
-    font-size: 4vw;
+    font-size: 4.4vw;
   }
   .item_3 {
     margin-top: 7%;
@@ -753,6 +773,7 @@ justify-content: center; */
     width: 100%;
     gap: 0px;
     text-align: center;
+    align-items: center;
   }
   .program_time_and_daily {
     font-size: 4.8vw;
@@ -762,7 +783,7 @@ justify-content: center; */
     font-size: 4.5vw;
   }
   .program_place_address {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .ceremony {
     display: flex;
@@ -777,7 +798,8 @@ justify-content: center; */
   }
   .wedding_item_1,
   .ceremony_item_1 {
-    font-size: 7vw;
+    font-size: 5.5vw;
+    font-weight: 500;
   }
   .ceremony_item_3,
   .wedding_item_3 {
@@ -801,6 +823,50 @@ justify-content: center; */
   .yandexMap>iframe{
     height : 213px;
   }
+  .rings_image1{
+    display: none;
+  }
+  .rings_image2{
+    display: flex;
+  }
+  .glass_image1{
+    display: none;
+  }
+  .glass_image2{
+    display: flex;
+  }
+  .ceremony_item_2{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  .wedding_item_2{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  .text_invitation {
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+  .section_body {
+    width: 64%;
+  }
+  .text_welcome, .text_invitation_waiting {
+    font-size: 7vw;
+    line-height: 4vw;
+  }
+  .text_invitation_waiting {
+    font-size: 6vw;
+  }
+  .text_invitation>span {
+    background-color: transparent;
+    font-family: "Noto Serif TC", serif;
+    font-size: 5vw;
+    font-weight: bold;
+    line-height: 6vw;
+    letter-spacing: 0.1vw;
+  }
 }
 
 @media (max-width: 500px) {
@@ -821,8 +887,8 @@ justify-content: center; */
   .second_section_container {
     position: absolute;
     display: flex;
-    width: 50vw;
-    height: 35vw;
+    width: 75vw;
+    height: 70vw;
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-around;
