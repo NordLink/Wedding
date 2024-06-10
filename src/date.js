@@ -14,7 +14,7 @@ function updateTimer() {
     const hours = Math.floor((timeDifferent % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
     const minutes = Math.floor((timeDifferent % (1000 * 60 * 60)) / (1000 * 60))
   
-    document.getElementById('timer').textContent = `${days} дней, ${hours} часов, ${minutes} минут`
+    document.getElementById('timer').innerHTML = `До начала события:<br>${days} дней, ${hours} часов, ${minutes} минут`
   }
   
 const timerInterval = setInterval(updateTimer, 1000)
